@@ -1,4 +1,6 @@
-/*@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Yaldevi');
+
 
 * {
     box-sizing: border-box;
@@ -9,4 +11,92 @@
 html, body {
     margin: 0;
     padding: 0;
-}*/
+}
+
+/* --------------------------------- MAIN HEADER ------------------------------------ */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("https://ids.si.edu/ids/deliveryService?id=NMAH-JN2018-01516-000001&max=1000");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+/* BOOK TITLE & INTRODUCTION */
+.main-header h1 {
+    font-family: "Yaldevi";
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.main-header h3 {
+    font-family: "Yaldevi";
+    color: #f3d2ca;
+    text-align: center;
+    font-size: 2.0em;
+    padding-top: 2.5em;
+}
+
+/* ------------------------------------- MAIN NAV BAR -------------------------------------*/
+.main-nav ul {
+    margin: 0;
+}
+
+.main-nav li {
+    padding: 0 5%;
+    display: inline;
+    color: #8d0909;
+}
+
+.main-nav a {
+    display: inline-block; /* allows to set width and height as well as inline */
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(59, 49, 49, 0.3);
+}
+
+/* ---------------------------------- MAIN CONTENT -----------------------------------*/
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    line-height: 2.5em;
+}
+
+/* ---------------------------------- FOOTER CONTENT -----------------------------------*/
+.footer-nav {
+    font-family: "Yaldevi";
+    background-color: #56CCF2;
+    margin-top: 5em;
+    padding: .25em 0;
+    text-align: center;
+}
+
+.footer-nav h3 {
+    color: white;
+}
+
+.footer-nav img {
+    width: 50px;
+    height: 80px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: none;
+}
