@@ -1,50 +1,66 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-@import url('https://fonts.googleapis.com/css?family=Yaldevi');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: "Raleway";
     color: #777777;
 }
 
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #ffeaeb;
 }
 
 /* --------------------------------- MAIN HEADER ------------------------------------ */
 .main-header {
-    background-color: rgba(0, 0, 0, 0.4);
-    background-image: url("https://ids.si.edu/ids/deliveryService?id=NMAH-JN2018-01516-000001&max=1000");
-    background-blend-mode: multiply;
-    background-size: cover;
-    padding-bottom: 200px;
-}
-
-/* BOOK TITLE & INTRODUCTION */
-.main-header h1 {
-    font-family: "Yaldevi";
-    color: white;
-    text-align: center;
-    font-size: 2.5em;
+    background-color: #470000;
 }
 
 .main-header h3 {
-    font-family: "Yaldevi";
-    color: #f3d2ca;
+    color: #ebddd9;
+    font-family: "Lato";
+    font-weight: 100;
     text-align: center;
     font-size: 2.0em;
-    padding-top: 2.5em;
+    padding-bottom: 50px;
+}
+
+.slideImages {
+    display: none;
+}
+
+.slideImages img {
+    /*display: block;
+    width: 60%;*/
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    /*filter: brightness(50%);*/
 }
 
 /* ------------------------------------- MAIN NAV BAR -------------------------------------*/
+.main-nav {
+    background-color: #470000;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .main-nav ul {
     margin: 0;
+    display: inline;
 }
 
 .main-nav li {
-    padding: 0 5%;
+    padding: 0 2em;
     display: inline;
     color: #8d0909;
 }
@@ -60,31 +76,32 @@ html, body {
     background-color: rgba(255, 255, 255, .3);
 }
 
-.main-nav {
-    text-align: center;
-    font-size: 1.2em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(59, 49, 49, 0.3);
-}
-
 /* ---------------------------------- MAIN CONTENT -----------------------------------*/
 .main-content {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5em;
-    line-height: 2.5em;
+    line-height: 2em;
+}
+
+.main-content h1 {
+    font-family: "Lato";
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: center;
+    color: #000000;
 }
 
 /* ---------------------------------- FOOTER CONTENT -----------------------------------*/
 .footer-nav {
-    font-family: "Yaldevi";
-    background-color: #56CCF2;
+    font-family: 'Anton';
+    background-color: #470000;
     margin-top: 5em;
     padding: .25em 0;
     text-align: center;
 }
 
-.footer-nav h3 {
+.footer-nav h3, .footer-nav h3 em {
     color: white;
 }
 
@@ -94,9 +111,5 @@ html, body {
 }
 
 .footer-nav a {
-    text-decoration: none;
-}
-
-.footer-nav a:hover {
     text-decoration: none;
 }
