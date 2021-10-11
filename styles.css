@@ -35,8 +35,6 @@ html, body {
 }
 
 .slideImages img {
-    /*display: block;
-    width: 60%;*/
     display: block;
     width: 100%;
     max-width: 1500px;
@@ -78,18 +76,42 @@ html, body {
 
 /* ---------------------------------- MAIN CONTENT -----------------------------------*/
 .main-content {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
-    line-height: 2em;
 }
 
 .main-content h1 {
+    font-family: "Raleway";
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+}
+
+.main-content p {
+    line-height: 2em;
+}
+
+section {
+    padding: 100px 0;
+    border-bottom: 1px solid #680505;
+}
+
+section h7, section h7 em {
+    text-align: center;
+}
+
+#about h2 {
     font-family: "Lato";
     font-weight: lighter;
     font-size: 1.5em;
-    text-align: center;
+    /*text-align: center;*/
     color: #000000;
+}
+
+#works-cited p, #works-cited p em {
+    font-family: 'Times New Roman';
 }
 
 /* ---------------------------------- FOOTER CONTENT -----------------------------------*/
@@ -97,7 +119,7 @@ html, body {
     font-family: 'Anton';
     background-color: #470000;
     margin-top: 5em;
-    padding: .25em 0;
+    padding: 5em 0;
     text-align: center;
 }
 
