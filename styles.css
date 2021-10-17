@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Anton');
-
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
@@ -16,9 +13,26 @@ html, body {
     background-color: #ffeaeb;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888888;
+}
+
 /* --------------------------------- MAIN HEADER ------------------------------------ */
 .main-header {
-    background-color: #470000;
+    background-color: black;
 }
 
 .main-header h3 {
@@ -43,13 +57,20 @@ html, body {
     /*filter: brightness(50%);*/
 }
 
-/* ------------------------------------- MAIN NAV BAR -------------------------------------*/
+/* ------------------------------------ MAIN NAV BAR ------------------------------------*/
 .main-nav {
-    background-color: #470000;
+    background-color: black;
     text-align: center;
     font-size: 1.2em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* Frozen Navbar */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
+    opacity: 0.95;
 }
 
 .main-nav ul {
@@ -75,18 +96,18 @@ html, body {
 }
 
 /* ---------------------------------- MAIN CONTENT -----------------------------------*/
-.main-content {
+/*.main-content {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
-}
+}*/
 
 .main-content h1 {
     font-family: "Raleway";
     font-weight: lighter;
     font-size: 2em;
     text-align: center;
-    color: #000000;
+    color: black;
 }
 
 .main-content p {
@@ -94,11 +115,13 @@ html, body {
 }
 
 section {
-    padding: 100px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 1.5em;
     border-bottom: 1px solid #680505;
 }
 
-section h7, section h7 em {
+.subheader {
     text-align: center;
 }
 
@@ -107,31 +130,109 @@ section h7, section h7 em {
     font-weight: lighter;
     font-size: 1.5em;
     /*text-align: center;*/
-    color: #000000;
+    color: black;
 }
 
+/*-------------------------- INTERESTS -----------------------------*/
+#interests {
+    max-width: none;
+    background-color: black;
+}
+
+#interests h1 {
+    color: white;
+}
+
+#interests h7 em {
+    color: grey;
+}
+
+#interests table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#interests td, #interests td em {
+    height: 5em;
+    color: white;
+}
+
+#contact button {
+    background-color: #56CCF2;
+    color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    width: 90px;
+    height: 30px;
+    font-size: 1em;
+}
+
+#contact button:hover {
+    background-color: #2D9CDB;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 1em;
+    resize: none;
+}
+
+#interests td img {
+    width: 100px;
+    height: 120px;
+}
+
+#book img {
+    width: 50px;
+    height: 80px;
+}
+/*-------------------------------- WORKS CITED ----------------------------------*/
+#works-cited {
+    max-width: none;
+    background-color: black;
+    text-align: center;
+}
+
+#works-cited h1 {
+    color: white;
+}
 #works-cited p, #works-cited p em {
+    color: white;
     font-family: 'Times New Roman';
 }
 
 /* ---------------------------------- FOOTER CONTENT -----------------------------------*/
 .footer-nav {
-    font-family: 'Anton';
-    background-color: #470000;
-    margin-top: 5em;
+    /*background-color: #ffeaeb;*/
+    /*margin-top: 5em;*/
     padding: 5em 0;
     text-align: center;
 }
 
-.footer-nav h3, .footer-nav h3 em {
-    color: white;
+.social-media {
+    text-align: center;
 }
 
-.footer-nav img {
-    width: 50px;
-    height: 80px;
+.social-media ul {
+    margin: 0;
+    display: inline;
 }
 
-.footer-nav a {
-    text-decoration: none;
+.social-media li {
+    padding: 0 0.1em;
+    display: inline;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
 }
