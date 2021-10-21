@@ -70,7 +70,7 @@ html, body {
     top: 0px;
     width: 100%;
     z-index: 10000;
-    opacity: 0.95;
+    opacity: 0.75;
 }
 
 .main-nav ul {
@@ -161,7 +161,7 @@ section {
 }
 
 #contact button {
-    background-color: #56CCF2;
+    background-color: #2D9CDB;
     color: white;
     border: none;
     border-radius: .3em;
@@ -172,7 +172,7 @@ section {
 }
 
 #contact button:hover {
-    background-color: #2D9CDB;
+    background-color: #56CCF2;
 }
 
 #contact {

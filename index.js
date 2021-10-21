@@ -1,6 +1,10 @@
 
 var slideIndex = 0;
-window.addEventListener("DOMContentLoaded", slideshow);
+window.addEventListener("DOMContentLoaded", onStart);
+
+function onStart() {
+    slideshow();
+}
 
 function slideshow() {
     var i;
