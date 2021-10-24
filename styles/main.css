@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+@import "index.css";
 
 * {
     box-sizing: border-box;
     font-family: "Raleway";
-    color: #777777;
+    /*color: #777777;*/
+    color: #929292;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #ffeaeb;
+    /*background-color: #ffeaeb;*/
+    background-color: rgb(25, 25, 25);
 }
 
 ::-webkit-scrollbar {
@@ -30,23 +35,10 @@ html, body {
     background-color: #888888;
 }
 
-/* --------------------------------- MAIN HEADER ------------------------------------ */
-.main-header {
-    background-color: black;
-}
-
-.main-header h3 {
-    color: #ebddd9;
-    font-family: "Lato";
-    font-weight: 100;
-    text-align: center;
-    font-size: 2.0em;
-    padding-bottom: 50px;
-}
-
-.slideImages {
+/*.slideImages {
     display: none;
-}
+    filter: blur(3px);
+}*/
 
 .slideImages img {
     display: block;
@@ -59,18 +51,17 @@ html, body {
 
 /* ------------------------------------ MAIN NAV BAR ------------------------------------*/
 .main-nav {
-    background-color: black;
+    background-color: rgb(25, 25, 25);
     text-align: center;
     font-size: 1.2em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-
     /* Frozen Navbar */
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 10000;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .main-nav ul {
@@ -92,72 +83,31 @@ html, body {
 }
 
 .main-nav a:hover {
-    background-color: rgba(255, 255, 255, .3);
+    color: #e7e72d;
 }
 
 /* ---------------------------------- MAIN CONTENT -----------------------------------*/
-/*.main-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
-}*/
-
 .main-content h1 {
     font-family: "Raleway";
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 2em;
     text-align: center;
-    color: black;
+    /*color: black;*/
+    color: rgb(255, 255, 255);
 }
 
 .main-content p {
     line-height: 2em;
 }
 
-section {
+/*section {
     max-width: 900px;
     margin: 0 auto;
     padding: 100px 1.5em;
-    border-bottom: 1px solid #680505;
 }
 
 .subheader {
     text-align: center;
-}
-
-#about h2 {
-    font-family: "Lato";
-    font-weight: lighter;
-    font-size: 1.5em;
-    /*text-align: center;*/
-    color: black;
-}
-
-/*-------------------------- INTERESTS -----------------------------*/
-#interests {
-    max-width: none;
-    background-color: black;
-}
-
-#interests h1 {
-    color: white;
-}
-
-#interests h7 em {
-    color: grey;
-}
-
-#interests table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-#interests td, #interests td em {
-    height: 5em;
-    color: white;
 }
 
 #contact button {
@@ -194,32 +144,19 @@ section {
 #book img {
     width: 50px;
     height: 80px;
-}
-/*-------------------------------- WORKS CITED ----------------------------------*/
-#works-cited {
-    max-width: none;
-    background-color: black;
-    text-align: center;
-}
-
-#works-cited h1 {
-    color: white;
-}
-#works-cited p, #works-cited p em {
-    color: white;
-    font-family: 'Times New Roman';
-}
+}*/
 
 /* ---------------------------------- FOOTER CONTENT -----------------------------------*/
 .footer-nav {
-    /*background-color: #ffeaeb;*/
-    /*margin-top: 5em;*/
+    background-color: #101010;
     padding: 5em 0;
     text-align: center;
 }
 
 .social-media {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-media ul {
@@ -228,8 +165,8 @@ section {
 }
 
 .social-media li {
-    padding: 0 0.1em;
-    display: inline;
+    display: inline-block;
+    padding: 0 4px;
 }
 
 .social-media img {

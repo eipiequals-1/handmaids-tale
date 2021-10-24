@@ -3,7 +3,21 @@ var slideIndex = 0;
 window.addEventListener("DOMContentLoaded", onStart);
 
 function onStart() {
-    slideshow();
+    /*slideshow();
+    var buttons = document.getElementsByClassName("btns");
+    for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        btn.addEventListener("click", onNavBarClick(btn));
+    }*/
+    //window.scrollTo({top: 550, behavior: "smooth"})
+}
+
+function onNavBarClick(btn) {
+    var innerHtml = btn.innerHtml;
+    if (innerHtml === "ABOUT") {
+        window.scrollTo({ top: document.getElementById("about").getBoundingClientRect().x, behavior: "smooth" });
+        alert("about clicked");
+    }
 }
 
 function slideshow() {

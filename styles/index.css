@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+/* ------------------------------- INDEX.HTML -------------------------------------- */
+/* --------------------------------- MAIN HEADER ------------------------------------ */
+.main-header {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("https://st.hzcdn.com/simgs/7701e5590aba4cd8_4-8816/home-design.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.main-header img {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header h3 {
+    color: #00ffff;
+    font-family: "Amatic Sc";
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 350px;
+    font-size: 3.0em;
+}
+
+#visit {
+    font-family: "Amatic Sc";
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#visit:hover {
+    color: #e7e72d;
+}
+
+.index {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.index ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.index .one, .index .two, .index .three {
+    display: inline-block;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.index .one h3, .index .two h3, .index .three h3 {
+    color: white;
+    font-size: x-large;
+}
+
+.index .one {
+    background-color: #c14000;
+}
+
+.index .two {
+    background-color: #009988;
+}
+
+.index .three {
+    background-color: #ffa500;
+}
+
+.index a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px;
+
+    width: 150px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.index a:hover {
+    color: black;
+    background-color: #009988;
+    border: 2px solid #009988;
+}
