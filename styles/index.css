@@ -6,7 +6,6 @@
 /* ------------------------------- INDEX.HTML -------------------------------------- */
 /* --------------------------------- MAIN HEADER ------------------------------------ */
 .main-header {
-    background-color: rgba(0, 0, 0, 0);
     background-image: url("https://st.hzcdn.com/simgs/7701e5590aba4cd8_4-8816/home-design.jpg");
     background-blend-mode: multiply;
     background-size: cover;
@@ -49,8 +48,9 @@
 }
 
 .index {
+    background-color: rgb(35, 35, 35);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 100px auto;
     display: flex;
     justify-content: center;
 }
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     padding: 10px;
 
     width: 150px;

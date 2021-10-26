@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+#contact {
+    text-align: center;
+}
+
+#contact textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 1em;
+    resize: none;
+}
+
+#book img {
+    width: 50px;
+    height: 80px;
+}
+
+#send {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px;
+
+    width: 150px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+#send:hover {
+    color: black;
+    background-color: #009988;
+    border: 2px solid #009988;
+}

@@ -3,3 +3,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 /* ------------------------------- TOWN_SITE.HTML --------------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: "Lato";
+    color: #929292;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafbfc;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888888;
+}
+
+/* ---------------------------------- MAIN HEADER BAR -----------------------------------*/
+header {
+    background-color: #2221229a;
+    background-image: url("https://www.thesun.co.uk/wp-content/uploads/2018/05/ad-map-handmaids-tale.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 100px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Raleway";
+    color: #e7e72d;
+    padding-top: 250px;
+}
+
+header nav {
+    background-color: #d0d0d1;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    /* Frozen Navbar */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
+    opacity: 0.85;
+}
+
+header nav ul {
+    margin: 0;
+    display: inline;
+}
+
+header nav li {
+    padding: 0 2em;
+    display: inline;
+}
+
+header nav button {
+    display: inline-block; /* allows to set width and height as well as inline */
+    padding: 0.5em;
+    color: #34495e;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}
+
+header nav button:hover {
+    color: #f08c79;
+}
+
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 100px 1.5em;
+}
+
+section h1 {
+    font-family: "Lato";
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+    color: #34495e;
+    border-bottom: 1px solid black;
+}
+
+section h2 {
+    font-family: 'Courier New', Courier;
+    font-weight: lighter;
+}
+
+section p {
+    font-size: 1.15em;
+    line-height: 2em;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 1em;
+    resize: none;
+}
+
+#send {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 20px;
+
+    width: 150px;
+    border: 2px solid #f08c79;
+    color: #f08c79;
+    text-decoration: none;
+}
+
+#send:hover {
+    color: #34495e;
+    border: 2px solid #34495e;
+}

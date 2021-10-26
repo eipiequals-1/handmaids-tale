@@ -6,42 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offred | About Me </title>
     <link rel="stylesheet" href="styles/main.css"/>
-    <style>
-        #about h2 {
-            font-family: "Lato";
-            font-weight: lighter;
-            font-size: 1.5em;
-            /*text-align: center;*/
-            color: white;
-        }
-
-        /*-------------------------- INTERESTS -----------------------------*/
-        #interests {
-            max-width: none;
-            background-color: black;
-        }
-
-        #interests h1 {
-            color: white;
-        }
-
-        #interests h7 em {
-            color: grey;
-        }
-
-        #interests table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2em;
-            text-align: center;
-        }
-
-        #interests td, #interests td em {
-            height: 5em;
-            color: white;
-        }
-    </style>
 
     <script src="index.js"></script>
 </head>
@@ -58,7 +22,25 @@
     </header>
     <div class="main-content">
         <section id="about">
-            <h1>ABOUT</h1>
+            <h1>ABOUT ME</h1>
+            <!-- Slideshow Images -->
+            <div class="slideImages">
+            <img src="img/slide1.jpg">
+            </div>
+            <div class="slideImages">
+                <img src="img/slide2.jpg">
+            </div>
+            <div class="slideImages">
+                <img src="img/slide3.jpg">
+            </div>
+            <p>Hi, my name is Offred, and I'm a handmaid. I have a husband, Luke, and daughter who I have not seen in years, but I love them so much.</p>
+            <p>Oh and did I mention, I work for the Commander!</p>
+            <p>My dream is to be with my family again. Please help me get news of them if possible. I really miss them!</p>
+            <button type="button" onclick="smoothScroll(document.getElementById('bio'))">READ MORE</button>
+            
+        </section>
+        <section id="bio">
+            <h1>BIO</h1>
             <div class="subheader">
                 <h7><em>I'm Offred</em></h7>
             </div>
@@ -69,9 +51,10 @@
             <p>A few years ago, before the revolution, I was married to a man named Luke. I loved him dearly, and I also had a little girl. I lived a happy life, until I was robbed of my job and my property like all other women of the country. Luke, my daughter, and I decided to flee to Canada, but we were captured on the way and have never seen each other ever since. I was then sent to a Red Center where I was taught lessons by a woman named Aunt Lydia about women's role as an obedient child bearer and becoming a handmaid.</p>
             <p>Now, I have to wear a red dress with a white veil. I do not have any choice. I can not visit men, and I can only visit women of a lower social status.</p>
 
-            <img src="https://i1.wp.com/scenetherapy.com/wp-content/uploads/2019/06/Goolge-Maps-Commander-Lawrence-House.png?resize=768%2C605&ssl=1">
             <h2>LIFE IN THE COMMANDER'S HOUSE</h2>
-            <p>I was finally assigned to the Commander's house to bear children for Serena Joy, his wife. Gradually, a routine formed. I would take shopping trips with Ofglen, my handmaid friend, and visit the doctor to check for diseases. Every month, I would have ritualized sexual intercourse with the Commander to try and have a baby.</p>
+            <p>I was finally assigned to the Commander's house to bear children for Serena Joy, his wife. Gradually, a routine formed. I would take shopping trips with Ofglen, my handmaid friend, and visit the doctor to check for diseases. </p>
+            <img src="https://i1.wp.com/scenetherapy.com/wp-content/uploads/2019/06/Goolge-Maps-Commander-Lawrence-House.png?resize=768%2C605&ssl=1">
+            <p>Every month, I would have ritualized sexual intercourse with the Commander to try and have a baby.</p>
         
             <h2>CHANGES TO MY LIFE</h2>
             <p>One day, the Commander sent his gardener, Nick, to tell me to meet him at night in the Commander’s office. I went and played Scrabble. Before I left, he asked me for a kiss, to which I reluctantly agreed. The visits to his office became more frequent and I grew closer to him. He gave me hand lotion and let me look at old magazines like Vogue.</p>
@@ -81,7 +64,7 @@
             <h2>LATER YEARS</h2>
             <h4><b><em>The following is written by Professor Pieixoto as Offred did not get the chance to continue her biography.</em></b></h4>
             <p>Offred was shipped away in a black van, who were the secret police of Gilead. It is believed that Nick had arranged for her to escape the country.</p>
-
+            <button type="button" onclick="smoothScroll(document.getElementById('interests'))">INTERESTS</button>
         </section>
         <section id="interests">
             <h1>INTERESTS</h1>
@@ -106,26 +89,20 @@
                 </tr>
                 <tr>
                     <td>Cigarettes</td>
-                    <td><img src=""></td>
+                    <td><img src="https://i.natgeofe.com/n/1405eb56-20d2-4892-bd6c-d0e5ff5ba1b0/0000016c-6da7-d99d-af7c-6ff7a6ed0000_square.jpg"></td>
                 </tr>
             </table>
-        </section>
-        <!-- <section id="contact">
-            <h1>CONTACT</h1>
-            <div class="subheader">
-                <h7><em>Feel free to drop a note!</em></h7>
-            </div>
-            <br>
-            <form>Name <input type="text"></form>
-            <br>
-            <form>Email <input type="text"></form>
-            <br>
-            <textarea placeholder="What would you like to tell me?"></textarea>
-            <h3>Please support me by buying this book!</h3>
-            <a id="book" target="_blank" href="https://www.amazon.com/Handmaids-Tale-Margaret-Atwood/dp/038549081X/ref=asc_df_038549081X/?tag=hyprod-20&linkCode=df0&hvadid=312009828129&hvpos=&hvnetw=g&hvrand=6634277992441954733&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032020&hvtargid=pla-307474312766&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/51cTFYeOAXS.jpg">
-            </a>
-            <br>
-            <button>SEND</button> -->
+            <button type="button" onclick="smoothScroll(document.getElementsByClassName('main-nav')[0])">TOP</button>
         </section>
     </div>
+    <footer class="footer-nav">
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="https://honorveteransnow.org/wp-content/uploads/Facebook-Icon-Gray-Box.png"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="https://www.pngarea.com/pngm/8/5161958_instagram-logo-png-transparent-background-gray-instagram-logo.png"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="https://www.pikpng.com/pngl/m/181-1817668_twitter-logo-grey-png-twitter-logo-transparent-purple.png"></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="https://www.pngitem.com/pimgs/m/49-494342_linkedin-icon-grey-letters-linkedin-logo-icon-hd.png"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>

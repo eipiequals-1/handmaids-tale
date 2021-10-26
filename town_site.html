@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilead | Home</title>
+
+    <link rel="stylesheet" href="styles/town_site.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><button type="button" onclick="smoothScroll(document.getElementById('home'))">HOME</button></li>
+                <li><button type="button" onclick="smoothScroll(document.getElementById('about'))">ABOUT</button></li>
+                <li><button type="button" onclick="smoothScroll(document.getElementById('contact'))">CONTACT</button></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Gilead</h1>
+    </header>
+    <div class="main-content">
+        <section id="about">
+            <h1>ABOUT</h1>
+            <h2>HISTORY</h2>
+            <p>The Republic of Gilead is part of what used to be the United States. It stretches along the east cost of North America. A few years ago, our framers noticed a decline in birthrates, caused by environmental disasters. After fighting the Second Civil War, we were able to separate a part of the US for us, and we begin controlling reproduction for the better.</p>
+
+            <h2>OUR SOCIETY</h2>
+            <p>Single women in Gilead are to be married off, become a Martha, or a Handmaid. Otherwise, they will be classified as "Unwomen" and will be stripped of all human rights. Women in Gilead are not allowed to own property or know how to read. Marthas are servants for families, and Handmaids are responsible to produce offspring for the couple whom they work for.</p>
+            <p>Abortion is outlawed as our goal is to increase the number of potential humans.</p>
+            
+            <h2>CLOTHING</h2>
+            <p>Wives wear blue.</p>
+            <p>Handmaids wear red.</p>
+            <p>Marthas wear green.</p>
+            <p>Econowives, who are lower-class women, wear a mixture of these colors with stripes.</p>
+
+            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_380,c_fill,g_auto,h_214,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180427141200-11-handmaids-tale.jpg">
+        </section>
+        <section id="contact">
+            <h1>CONTACT</h1>
+            <br>
+            <form>Name <input type="text"></form>
+            <br>
+            <form>Email <input type="text"></form>
+            <br>
+            <textarea placeholder="Your message"></textarea>
+            <a id="send" href="#">SEND</a>
+        </section>
+    </div>
+</body>
+</html>

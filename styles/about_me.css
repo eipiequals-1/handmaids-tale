@@ -3,3 +3,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 /* ------------------------------- ABOUT_ME.HTML --------------------------------------*/
+#about, #bio, #interests {
+    margin-top: 80px;
+    background-color: rgb(35, 35, 35);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#about h1, #bio h1, #interests h1 {
+    font-family: "Amatic SC";
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+#about img {
+    width: 30%;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+section button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    font-size: 1em;
+
+    width: 150px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+section button:hover {
+    color: black;
+    background-color: #009988;
+    border: 2px solid #009988;
+}
+
+#bio h2 {
+    font-family: "Amatic SC";
+    font-weight: lighter;
+    font-size: 2.5em;
+    /*text-align: center;*/
+    color: white;
+}
+
+#bio img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+/*-------------------------- INTERESTS -----------------------------*/
+#interests h1 {
+    color: white;
+}
+
+#interests h7 em {
+    color: grey;
+}
+
+#interests table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#interests td, #interests td em {
+    height: 5em;
+    color: white;
+}
+
+#interests td img {
+    width: 100px;
+    height: 120px;
+}

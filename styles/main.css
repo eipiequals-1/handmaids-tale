@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 @import "index.css";
+@import "about_me.css";
+@import "contact.css";
 
 * {
     box-sizing: border-box;
     font-family: "Raleway";
-    /*color: #777777;*/
     color: #929292;
 }
 
@@ -34,11 +35,6 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #888888;
 }
-
-/*.slideImages {
-    display: none;
-    filter: blur(3px);
-}*/
 
 .slideImages img {
     display: block;
@@ -100,51 +96,16 @@ html, body {
     line-height: 2em;
 }
 
-/*section {
-    max-width: 900px;
-    margin: 0 auto;
+section {
+    background-color: rgb(35, 35, 35);
+    max-width: 1000px;
+    margin: 100px auto;
     padding: 100px 1.5em;
 }
 
 .subheader {
     text-align: center;
 }
-
-#contact button {
-    background-color: #2D9CDB;
-    color: white;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-    width: 90px;
-    height: 30px;
-    font-size: 1em;
-}
-
-#contact button:hover {
-    background-color: #56CCF2;
-}
-
-#contact {
-    text-align: center;
-}
-
-#contact textarea {
-    width: 400px;
-    height: 100px;
-    font-size: 1em;
-    resize: none;
-}
-
-#interests td img {
-    width: 100px;
-    height: 120px;
-}
-
-#book img {
-    width: 50px;
-    height: 80px;
-}*/
 
 /* ---------------------------------- FOOTER CONTENT -----------------------------------*/
 .footer-nav {
