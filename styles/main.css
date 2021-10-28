@@ -120,14 +120,8 @@ section {
     align-items: center;
 }
 
-.social-media ul {
-    margin: 0;
-    display: inline;
-}
-
-.social-media li {
-    display: inline-block;
-    padding: 0 4px;
+.social-media span {
+    margin: 0 5px;
 }
 
 .social-media img {

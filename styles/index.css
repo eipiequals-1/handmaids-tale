@@ -55,12 +55,6 @@
     justify-content: center;
 }
 
-.index ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
 .index .one, .index .two, .index .three {
     display: inline-block;
     padding: 30px 40px;

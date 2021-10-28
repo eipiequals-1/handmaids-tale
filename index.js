@@ -9,7 +9,7 @@ window.smoothScroll = function (target) {
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
     } while (scrollContainer.scrollTop == 0);
-
+    
     var targetY = 0;
     do {
         if (target == scrollContainer) break;
