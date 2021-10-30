@@ -117,10 +117,22 @@ section p {
 
 section img {
     display: block;
-    width: 100%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
+}
+
+#house, #road {
+    border-radius: 50%;
+    float: left;
+    width: 400px;
+    margin: 0 10px;
+}
+
+#road {
+    float: right;
+    border-radius: 0;
 }
 
 #contact {
