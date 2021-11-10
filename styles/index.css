@@ -23,7 +23,7 @@
 }
 
 .main-header h3 {
-    color: #00ffff;
+    color: #1c9cad;
     font-family: "Amatic Sc";
     font-weight: bolder;
     text-align: center;
@@ -32,19 +32,24 @@
 }
 
 #visit {
-    font-family: "Amatic Sc";
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
     display: flex;
-    margin: 0 auto;
-    width: 200px;
     justify-content: center;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    font-size: 1em;
+
+    width: 150px;
+    border: 2px solid white;
+    background-color: rgb(35, 35, 35);;
+    color: white;
     text-decoration: none;
 }
 
 #visit:hover {
-    color: #e7e72d;
+    color: black;
+    background-color: #009988;
+    border: 2px solid #009988;
 }
 
 .index {
