@@ -55,6 +55,11 @@
     justify-content: center;
 }
 
+.index section h1 {
+    font-size: 2.5em;
+    font-family: "Amatic SC";
+}
+
 .index .one, .index .two, .index .three {
     display: inline-block;
     padding: 30px 40px;
@@ -98,4 +103,43 @@
     color: black;
     background-color: #009988;
     border: 2px solid #009988;
+}
+
+#fave span {
+    display: inline-block;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    /*background-color: #c14000;*/
+}
+
+
+#fave h1 {
+    text-align: center;
+    color: white;
+    font-family: "Amatic SC";
+    font-size: 2.5em;
+}
+
+#fave span a {
+    color: white;
+    font-family: "Amatic SC";
+    font-weight: lighter;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#fave span a:hover {
+    color: #ffa500;
+}
+
+#fave span .date {
+    font-size: 1.5em;
+}
+
+#fave span img {
+    width: 100%;
+    border-radius: 50%;
 }
