@@ -41,7 +41,7 @@
 
     width: 150px;
     border: 2px solid white;
-    background-color: rgb(35, 35, 35);;
+    background-color: rgb(35, 35, 35);
     color: white;
     text-decoration: none;
 }
@@ -65,7 +65,11 @@
     font-family: "Amatic SC";
 }
 
-.index .one, .index .two, .index .three {
+.flip-card {
+    background-color: transparent;
+    border: 1px solid slateblue;
+    perspective: 1000px;
+
     display: inline-block;
     padding: 30px 40px;
     color: white;
@@ -74,20 +78,46 @@
     width: 300px;
 }
 
-.index .one h3, .index .two h3, .index .three h3 {
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front h3 {
     color: white;
     font-size: x-large;
 }
 
-.index .one {
-    background-color: #c14000;
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
 }
 
-.index .two {
+.one {
+    background-color: #c14000;
+    color: white;
+}
+
+.two {
     background-color: #009988;
 }
 
-.index .three {
+.three {
     background-color: #ffa500;
 }
 
@@ -117,9 +147,11 @@
     text-align: center;
     justify-content: center;
     width: 300px;
-    /*background-color: #c14000;*/
 }
 
+#fave span:hover img {
+    filter: brightness(0.75);
+}
 
 #fave h1 {
     text-align: center;
