@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offred | Contact</title>
+    <title>Offred | Quiz</title>
     <link rel="stylesheet" href="styles/main.css"/>
-
     <script src="index.js"></script>
+    <script src="quiz.js"></script>
+    <style>
+        #quiz-section {
+            display: block;
+        }
+        #quiz-section h1 {
+            font-size: 2.5em;
+        }
+        .question {
+            font-weight: 600;
+            font-size: 2em;
+            padding: 30px 20px;
+            color: white;
+        }
+        input {
+            width: 90px;
+            padding: 10px 50px;
+        }
+        #results {
+            margin-top: 50px;
+            display: none;
+            background-color: #04aa6d;
+            color: white;
+            padding: 25px;
+            font-size: 1.2em;
+        }
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 1.7em;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <header id="top">
@@ -21,27 +60,19 @@
             </ul>
         </nav>
     </header>
-    <section id="contact">
-        <div class="success">
-            <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
-            <strong>Success!</strong> Your message has been sent!
-        </div>
-        <h1>- Contact -</h1>
-        <br>
-        <div class="subheader">
-            <h7><em>Feel free to drop a note!</em></h7>
-        </div>
-        <br>
-        <form>NAME <input type="text"></form>
-        <br>
-        <form>EMAIL <input type="text"></form>
-        <br>
-        <textarea placeholder="Enter your message!"></textarea>
-        <h3>Please support me by buying my book!</h3>
-        <a id="book" target="_blank" href="https://www.amazon.com/Handmaids-Tale-Margaret-Atwood/dp/038549081X/ref=asc_df_038549081X/?tag=hyprod-20&linkCode=df0&hvadid=312009828129&hvpos=&hvnetw=g&hvrand=6634277992441954733&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032020&hvtargid=pla-307474312766&psc=1"><img src="https://ffrf.org/images/virtuemart/product/resized/Screen%20Shot%202019-09-19%20at%2011.21.02%20AM_0x450.png">
-        </a>
-        <button id="send" type="button" onclick="showSuccess()">SEND</a>
-    </section>
+    <div class="main-content">
+        <section id="quiz-section">
+            <h1>How much did you pay attention?</h1>
+            <div id="quiz"></div>
+            <button id="submit">Get Results</button>
+            <div id="results">
+                <span class="closebtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
+            </div>
+        </section>
+    </div>
+    <script>
+
+    </script>
     <footer class="footer-nav">
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -77,4 +108,3 @@
         </a>
     </footer>
 </body>
-</html>

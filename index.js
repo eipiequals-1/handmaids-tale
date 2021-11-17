@@ -2,7 +2,7 @@
 var slideIndex = 0;
 window.addEventListener("DOMContentLoaded", onStart);
 
-window.smoothScroll = function (target) {
+function smoothScroll(target) {
     var scrollContainer = target;
     do {
         scrollContainer = scrollContainer.parentNode;
@@ -41,4 +41,8 @@ function slideshow() {
     }
     slides[slideIndex].style.display = "block";
     setTimeout(slideshow, 6000);
+}
+
+function showSuccess() {
+    document.getElementsByClassName("success")[0].style.display = "block";
 }

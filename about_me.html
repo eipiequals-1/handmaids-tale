@@ -10,13 +10,14 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav class="main-nav">
+            <a id="home" class="btns" href="index.html">HOME</a>
             <ul>
-                <li><a class="btns" href="index.html">HOME</a></li>
-                <li><a class="btns" href="about_me.html">ABOUT ME</a></li>
-                <li><a class="btns" href="town_site.html">VISIT MY TOWN</a></li>
-                <li><a class="btns" href="contact_me.html">CONTACT ME</a></li>
+                <li><a class="btns" href="about_me.html">About Me</a></li>
+                <li><a class="btns" href="town_site.html">Visit My Town</a></li>
+                <li><a class="btns" href="contact_me.html">Contact Me</a></li>
+                <li><a class="btns" href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
@@ -97,11 +98,37 @@
         </section>
     </div>
     <footer class="footer-nav">
-        <div class="social-media">
-            <span><a href="https://www.facebook.com" target="_blank"><img src="https://honorveteransnow.org/wp-content/uploads/Facebook-Icon-Gray-Box.png"></a></span>
-            <span><a href="https://www.instagram.com" target="_blank"><img src="https://www.pngarea.com/pngm/8/5161958_instagram-logo-png-transparent-background-gray-instagram-logo.png"></a></span>
-            <span><a href="https://www.twitter.com" target="_blank"><img src="https://www.pikpng.com/pngl/m/181-1817668_twitter-logo-grey-png-twitter-logo-transparent-purple.png"></a></span>
-            <span><a href="https://www.linkedin.com" target="_blank"><img src="https://www.pngitem.com/pimgs/m/49-494342_linkedin-icon-grey-letters-linkedin-logo-icon-hd.png"></a></span>
-        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <h1>QUICK LINKS</h1>
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="about_me.html">ABOUT ME</a>
+            </li>
+            <li>
+                <a href="town_site.html">VISIT MY TOWN</a>
+            </li>
+            <li>
+                <a href="contact_me.html">CONTACT ME</a>
+            </li>
+            <li>
+                <a href="quiz.html">QUIZ</a>
+            </li>
+        </ul>
+        <a href="https://facebook.com" target="_blank" class="social-icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
     </footer>
 </body>

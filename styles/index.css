@@ -7,6 +7,7 @@
 /* --------------------------------- MAIN HEADER ------------------------------------ */
 .main-header {
     background-image: url("https://st.hzcdn.com/simgs/7701e5590aba4cd8_4-8816/home-design.jpg");
+    background-color: rgba(0, 0, 0, 0.342);
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 100px;
@@ -14,21 +15,22 @@
     position: relative;
 }
 
-.main-header img {
-    display: block;
-    width: 100%;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .main-header h3 {
-    color: #1c9cad;
-    font-family: "Amatic Sc";
-    font-weight: bolder;
+    color: white;
+    font-weight: lighter;
     text-align: center;
     padding-top: 350px;
     font-size: 3.0em;
+}
+
+#intro {
+    margin: 60px;
+    text-align: center;
+}
+
+#intro h3 {
+    font-size: 2.5em;
+    color: white;
 }
 
 #visit {
@@ -44,6 +46,9 @@
     background-color: rgb(35, 35, 35);
     color: white;
     text-decoration: none;
+    border-radius: 10px;
+
+    transition: color 0.2s;
 }
 
 #visit:hover {
@@ -67,7 +72,8 @@
 
 .flip-card {
     background-color: transparent;
-    border: 1px solid slateblue;
+    border: 1px solid rgb(35, 35, 35);
+    border-radius: 15px;
     perspective: 1000px;
 
     display: inline-block;
@@ -104,13 +110,13 @@
 }
 
 .flip-card-back {
+    font-size: larger;
     color: white;
     transform: rotateY(180deg);
 }
 
 .one {
     background-color: #c14000;
-    color: white;
 }
 
 .two {
@@ -129,9 +135,11 @@
     padding: 10px;
 
     width: 150px;
+    height: min-content;
     border: 2px solid white;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .index a:hover {
@@ -166,6 +174,8 @@
     font-weight: lighter;
     font-size: 2em;
     text-decoration: none;
+
+    transition: color 0.5s;
 }
 
 #fave span a:hover {

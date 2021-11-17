@@ -6,6 +6,34 @@
     text-align: center;
 }
 
+.success, .success strong {
+    color: white;
+}
+
+.success {
+    display: none;
+    text-align: left;
+    padding: 20px;
+    background-color: #04aa6d;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 1.7em;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
 #contact h1 {
     font-family: "Amatic SC";
     font-size: 2.5em;

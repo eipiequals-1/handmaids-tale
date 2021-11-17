@@ -36,6 +36,9 @@ section button {
     background-color: transparent;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
+
+    transition: color 0.2s;
 }
 
 section button:hover {

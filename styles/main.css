@@ -63,12 +63,22 @@ html, body {
 .main-nav ul {
     margin: 0;
     display: inline;
+    float: right;
 }
 
 .main-nav li {
-    padding: 0 2em;
+    padding: 0 15px;
     display: inline;
     color: #8d0909;
+}
+
+#home {
+    float: left;
+    margin-left: 10px;
+}
+
+#home a {
+    font-family: "Lato";
 }
 
 .main-nav a {
@@ -76,6 +86,8 @@ html, body {
     padding: 0.5em;
     color: white;
     text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: color 0.3s;
 }
 
 .main-nav a:hover {
@@ -114,17 +126,38 @@ section {
     text-align: center;
 }
 
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-nav h1 {
+    color: white;
+    letter-spacing: 0.3em;
 }
 
-.social-media span {
-    margin: 0 5px;
+.footer-nav ul {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.social-media img {
-    width: 20px;
-    height: 20px;
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #aca5ac;
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+    color: #eeeeee;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s;
+    padding: 0 15px;
+}
+
+.social-icon:hover {
+    color: #333333;
 }
