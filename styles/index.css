@@ -157,7 +157,12 @@
     width: 300px;
 }
 
-#fave span:hover img {
+#fave span img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#fave img:hover {
     filter: brightness(0.75);
 }
 
@@ -175,6 +180,7 @@
     font-size: 2em;
     text-decoration: none;
 
+    cursor: pointer;
     transition: color 0.5s;
 }
 
@@ -186,7 +192,8 @@
     font-size: 1.5em;
 }
 
-#fave span img {
-    width: 100%;
-    border-radius: 50%;
+#fave span p {
+    color: #d4ddd5;
+    font-weight: 300;
+    letter-spacing: 1px;
 }

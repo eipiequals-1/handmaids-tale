@@ -37,6 +37,8 @@ var questions = [
     },
 ];
 
+const resultsContainerHtml = '<span class="closebtn" onclick="closeMessage(this)">×</span>';
+var timeout;
 window.addEventListener("DOMContentLoaded", function () {
     var quizContainer = document.getElementById("quiz");
     var resultsContainer = document.getElementById("results");
@@ -44,16 +46,18 @@ window.addEventListener("DOMContentLoaded", function () {
     generateQuiz(questions, quizContainer, resultsContainer, submitButton);
 });
 
+var addedText = false;
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
-    
+    resultsContainer.innerHTML = resultsContainerHtml;
+
     function showQuestions(questions, quizContainer) {
         // we'll need a place to store the output and the answer choices
 	    var output = [];
 	    var answers;
 
 	    // for each question...
-	    for (var i=0; i<questions.length; i++) {
+	    for (var i = 0; i < questions.length; i++) {
             
             // first reset the list of answers
             answers = [];
@@ -67,7 +71,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
-                    + '</label>'
+                    + '</label><br>'
                 );
             }
 
@@ -111,8 +115,14 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
             }
         }
         // show number of correct answers out of total
-        resultsContainer.innerHTML += "You got a " + numCorrect + " / " + questions.length + "!\n That is a " + numCorrect * 100 / questions.length + "%!";
+        if (!addedText) {
+            resultsContainer.innerHTML += "You got a " + numCorrect + " / " + questions.length + "!\n That is a " + numCorrect * 100 / questions.length + "%!";
+        }
+        addedText = true;
         resultsContainer.style.display = "block";
+        setTimeout(function () {
+            closeMessage(resultsContainer);
+        }, 5000);
     }
 
     showQuestions(questions, quizContainer);
@@ -120,4 +130,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 	submitButton.onclick = function() {
 		showResults(questions, quizContainer, resultsContainer);
 	}
+}
+
+function closeMessage() {
+    var messageContainer = document.getElementById("results");
+    messageContainer.style.display = 'none';
+    messageContainer.innerHTML = resultsContainerHtml;
+    addedText = false;
 }

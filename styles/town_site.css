@@ -166,3 +166,48 @@ section img {
     color: #34495e;
     border: 2px solid #34495e;
 }
+
+footer {
+    padding: 70px 0;
+    background-color: white;
+    text-align: center;
+}
+
+footer h1 {
+    color: black;
+    letter-spacing: 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer ul {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer li button {
+    text-decoration: none;
+    padding: 20px;
+    color: #aca5ac;
+    background-color: transparent;
+    transition: color 0.3s;
+    border: none;
+}
+
+footer li button:hover {
+    color: #eeeeee;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s;
+    padding: 0 15px;
+}
+
+.social-icon:hover {
+    color: #333333;
+}
